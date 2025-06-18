@@ -1,39 +1,40 @@
 # Particle Hunter
 
-This project aims to distinguish signal (Higgs Boson) events from background events using CERN's Higgs Boson dataset. The primary goal is to build an efficient classification model using the XGBoost algorithm.
+Particle Hunter is an experiment to detect Higgs Boson events in the CERN dataset. The project focuses on building an efficient classification model using the XGBoost algorithm with future support for Bayesian hyper-parameter optimization via Optuna.
 
 ## Dataset
 
 - **Source**: [Kaggle Higgs Boson Dataset](https://www.kaggle.com/competitions/higgs-boson/data)
-- **Description**: The dataset consists of simulated events labeled as either signal (Higgs boson events) or background. Download the dataset from the above Kaggle link and place it inside the `data/` folder.
+- **Description**: Simulated events labeled as either signal (Higgs Boson) or background. After downloading, place `training.csv` inside a folder named `data/` at the project root.
 
 ## Methodology
 
-The project includes the following steps:
-
-1. **Exploratory Data Analysis (EDA)**: Initial understanding and visualization of the data.
-2. **Baseline Model Creation**: Developing a basic model using XGBoost.
-3. **Handling Data Imbalance**: Applying techniques such as SMOTE or undersampling to address class imbalance.
-4. **Hyperparameter Optimization**: Tuning XGBoost parameters using Bayesian Optimization (optuna).
+1. **Exploratory Data Analysis (EDA)** for initial understanding and visualization.
+2. **Baseline Model Creation** using XGBoost.
+3. **Handling Data Imbalance** via techniques such as SMOTE or undersampling.
+4. **Hyper-parameter Optimization** with Bayesian methods (Optuna).
 
 ## Results
 
-*(To be updated upon final optimization)*
+*To be updated once optimization is complete.*
 
-- **Best Model**:
-  - AUC Score: TBD
-  - Classification Report: TBD
+- **Best Model**: TBD
+- **AUC Score**: TBD
 
-## Installation & Usage
-
-To set up and run the project:
+## Installation
 
 ```bash
 # Clone repository
-git clone <(https://github.com/madara88645/particle-hunter)>
+git clone https://github.com/madara88645/particle-hunter
 
 # Navigate to the project folder
 cd particle-hunter
 
 # Install dependencies
 pip install -r requirements.txt
+```
+
+## Usage
+
+Detailed training scripts will be provided in future updates. After installing dependencies and preparing the dataset, refer to forthcoming documentation for running experiments.
+
