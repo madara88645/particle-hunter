@@ -14,7 +14,7 @@ The project includes the following steps:
 1. **Exploratory Data Analysis (EDA)**: Initial understanding and visualization of the data.
 2. **Baseline Model Creation**: Developing a basic model using XGBoost.
 3. **Handling Data Imbalance**: Applying techniques such as SMOTE or undersampling to address class imbalance.
-4. **Hyperparameter Optimization**: Tuning XGBoost parameters using GridSearchCV or RandomizedSearchCV.
+4. **Hyperparameter Optimization**: Tuning XGBoost parameters using Bayesian Optimization (optuna).
 
 ## Results
 
