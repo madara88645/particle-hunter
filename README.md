@@ -2,6 +2,8 @@
 
 Particle Hunter is an experiment to detect Higgs Boson events in the CERN dataset. The project focuses on building an efficient classification model using the XGBoost algorithm with future support for Bayesian hyper-parameter optimization via Optuna.
 
+This repository now includes a lightweight training script and requirement listings to help you get started quickly.
+
 ## Dataset
 
 - **Source**: [Kaggle Higgs Boson Dataset](https://www.kaggle.com/competitions/higgs-boson/data)
@@ -36,5 +38,18 @@ pip install -r requirements.txt
 
 ## Usage
 
-Detailed training scripts will be provided in future updates. After installing dependencies and preparing the dataset, refer to forthcoming documentation for running experiments.
+1. Download `training.csv` from Kaggle and place it inside the `data/` directory.
+2. Install the Python dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Run the baseline training script:
+
+```bash
+python train.py
+```
+
+The script splits the dataset, trains an XGBoost model and reports the AUC score on the validation set.
 
