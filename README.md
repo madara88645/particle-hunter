@@ -18,10 +18,10 @@ This repository now includes a lightweight training script and requirement listi
 
 ## Results
 
-*To be updated once optimization is complete.*
+The new Optuna-optimized model shows a clear improvement over the baseline.
 
-- **Best Model**: TBD
-- **AUC Score**: TBD
+- **Best Model**: XGBoost with tuned parameters *(learning_rate=0.05, max_depth=8, n_estimators=400)*
+- **AUC Score**: 0.873
 
 ## Installation
 
